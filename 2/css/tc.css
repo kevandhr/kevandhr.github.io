@@ -1,0 +1,32 @@
+.h{
+	font: bold 150px italic "新宋体";
+	color: #9900ff;
+	background-color: #ff99cc;
+	letter-spacint: 50px;
+	text-decoration: underline;
+}
+.ha{
+	font: bold 90px italic "新宋体";
+	color: #99ff00;
+	background-color: #666666;
+	letter-spacint: 50px;
+	text-decoration: blink;
+}
+#n li{
+	float: left;
+}
+#n li a{
+	color: #ffffff;
+	text-decoration: none;
+	padding-top: 4px;
+	display: block;
+	width: 65px;
+	height: 20px;
+	text-align: center;
+	background-color: #6600cc;
+	margin-left: 2px;
+}
+#n li a:hover{
+	background-color: #9999ff;
+	color: #ffffff;
+}

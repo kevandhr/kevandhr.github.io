@@ -1,3 +1,3 @@
-# kai
+# k
 test home page
-https://.github.io/kai
+https://.github.io/k

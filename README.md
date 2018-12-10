@@ -1,3 +1,3 @@
 # kai
 test home page
-https://kailiuliuliu.github.io/kai
+https://.github.io/kai

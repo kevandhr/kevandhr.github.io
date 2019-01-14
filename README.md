@@ -1,3 +1,3 @@
 # k
-test home page
-https://.github.io/k
+home page
+https://likemilk.github.io/k

@@ -1,4 +1,4 @@
 # k
 home page
 
-https://likemilk.github.io/k
+https://likemilk.github.io

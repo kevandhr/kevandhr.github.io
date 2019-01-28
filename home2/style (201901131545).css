@@ -1,0 +1,86 @@
+body {
+  margin: 0px auto;
+  /*background-color: black;*/
+  background: url("../pictures/img_bg_blackboard.jpg") ;
+  background-size: cover;
+  font-family: Helvetica Neue, Helvetica;
+  color: white; }
+
+body a {
+  color: orange;
+  text-decoration: none; }
+  body a:hover {
+    color: yellow; }
+
+body .container{
+  margin: 0px auto;
+  /*background-color: black;*/
+  /*background: url("../pictures/img_bg_blackboard.jpg") no-repeat;*/
+}
+
+div#container{         
+    overflow: auto;
+} 
+    
+
+body .container img{
+  /*margin: 0 0 0 auto;*/
+  float: left;
+  margin-right: 20px;
+  padding-left: 25px;
+
+  }
+
+body .container div{
+  text-align: left;
+  font-size: 12px;
+  padding-left: 25px; 
+  margin-left:25px; }
+
+img .userheadicon{
+    float: left;                    /* 左侧图片混排 */
+    margin-right: 20px;            /* 图片右端与文字的距离 */
+    margin-bottom: 5px; }
+
+body .content {
+  /*background: url("../pictures/picture_kai_zhuhaihaibian.jpg") no-repeat bottom right;*/
+  /*height: 998px;*/
+  /*width: 1280px;*/
+  margin: 0 0 0 auto;
+  padding-left: px;
+  }
+
+body .content h1 {
+  font-weight: normal;
+  padding: 25px 0 0;
+  margin: 0px;
+  font-size: 100px; }
+
+body .content p {
+  font-size: 22px;
+  margin: 5px 0 10px 10px;
+  padding: 0px; }
+ 
+        
+    div#header{   
+        width: 1421px;      
+        border: 1px solid red;       
+        height:100px;     
+    }       
+    div#sidebar{      
+        width:300px;    
+        height:520px;   
+        border: 1px solid red;------------简写    
+        float: left;    
+    }    
+    div#content{   
+        width:1119px;   
+        height:520px;      
+        border: 1px solid green;       
+        float: right;-------------浮动    
+    }    
+    div#footer{  
+        height: 89px;    
+        border: 1px solid yellow;    
+        clear: both;--------------清除左右侧浮动 
+       }

@@ -1,0 +1,62 @@
+body {
+  margin: 0px auto;
+  /*background-color: black;*/
+  background: url("../pictures/img_bg_blackboard.jpg") ;
+  background-size: cover;
+  font-family: Helvetica Neue, Helvetica;
+  color: white; }
+
+body a {
+  color: orange;
+  text-decoration: none; }
+  body a:hover {
+  color: yellow; }
+
+div#container{
+  overflow: auto;
+} 
+ 
+div#header{
+  width: 0px;
+  height: 0px;  
+}
+/*border: 1px solid red;*/
+
+div#sidebar{
+  float: left;
+}
+
+div#content{
+  float: right;/*-------------浮动*/
+}
+
+div#footer{  
+  height: 89px;  
+  clear: both;/*--------------清除左右侧浮动*/
+}
+
+img .userheadicon{
+    float: left;                    /* 左侧图片混排 */
+    margin-left: 20px;            /* 图片右端与文字的距离 */
+}
+
+body .content {
+  /*background: url("../pictures/picture_kai_zhuhaihaibian.jpg") no-repeat bottom right;*/
+  /*height: 998px;*/
+  /*width: 1280px;*/
+  margin: 0 0 0 auto;
+  padding-left: px;
+  }
+
+body .content h1 {
+  font-weight: normal;
+  padding: 25px 0 0;
+  margin: 0px;
+  font-size: 100px; }
+
+body .content p {
+  font-size: 22px;
+  margin: 5px 0 10px 10px;
+  padding: 0px; }
+ 
+ 

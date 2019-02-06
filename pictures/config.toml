@@ -1,0 +1,108 @@
+publishdir = "/media/fengkai/BLACK/programming/08_wd_html/likemilk.github.io/hugopublic/" # 发布目录，指向github的本地仓库
+themesDir = "./themes"
+
+#[languages.en]
+#  languageCode = "en-us"
+#[languages.zh]
+  languageCode = "zh-cn"
+# 编译草稿，使用改参数保证 hugo server 即使没有加`--buildDrafts`，也能访问draft=true的md
+# buildDrafts = true
+copyright = "&copy; 2019. All rights reserved."
+canonifyurls = true
+# 博客的发布目录。测试时使用如下路径，发布到网络后，要修改为网路地址
+# baseurl = "https://likemilk.github.io/testhugo/"
+baseurl = "https://localhost:1313/"
+
+title = "World Peace" # 博客名称
+author = "Kai Feng"
+#[author]
+#  name = "Kai Feng"
+#  homepage = "https://likemilk.github.io/"
+
+
+theme = "hugo-theme-cactus-plus"
+hasCJKLanguage = false
+
+paginate = 10   # 每页显示的文章数量
+MetaDataFormat = "yaml"
+DefaultContentLanguage = "en"
+SectionPagesMenu = "main"
+googleAnalytics = ""
+enableRobotsTXT = true
+
+[indexes]
+  tag = "tags"
+  topic = "topics"
+
+[sitemap]
+  changefreq = "monthly"
+  priority = 0.5
+  filename = "sitemap.xml"
+
+[params]
+  # Shown in the home page
+  subtitle = "No pain, No gain"
+  brand = "Menu"
+  # CSS name for highlight.js
+  highlightjs = "androidstudio"
+  highlightjs_extra_languages = ["yaml"]
+  dateFormat = "02 Jan 2006, 15:04"
+
+  favicon = ""
+  description = "The last theme you'll ever need. Maybe."
+  facebook = ""
+  twitter = "https://twitter.com/GoHugoIO"
+  instagram = ""
+  youtube = ""
+  github = "https://github.com/likemilk"
+  gitlab = ""
+  linkedin = ""
+  # choose a background color from any on this page: http://tachyons.io/docs/themes/skins/ and preface it with "bg-"
+  background_color_class = "bg-black"
+  featured_image = "/images/gohugo-default-sample-hero-image.jpg"
+  recent_posts_number = 2
+
+[menu]
+  # Shown in the side menu.
+  [[menu.main]]
+    name = "Home" # 主页
+    pre = "<i class='fa fa-home fa-fw'></i>"
+    weight = 1
+    identifier = "home"
+    url = "/"
+  [[menu.main]]
+    name = "Archive" # 归档
+    pre = "<i class='fa fa-list fa-fw'></i>"
+    weight = 2
+    identifier = "post"
+    url = "/post/"
+  [[menu.main]]
+    name = "Categories" # 分类
+    pre = "<i class='fa fa-folder fa-fw'></i>"
+    weight = 3
+    url = "/topics/"
+  [[menu.main]]
+    name = "Tags" # 标签
+    pre = "<i class='fa fa-tags fa-fw'></i>"
+    weight = 4
+    url = "/tags/"
+  [[menu.main]]
+    name = "About" # 关于
+    pre = "<i class='fa fa-user fa-fw'></i>"
+    weight = 5
+    identifier = "about"
+    url = "/about/"
+  [[menu.main]]
+    name = "Contact" # 联系
+    pre = "<i class='fa fa-phone fa-fw'></i>"
+    weight = 6
+    url = "/contact/"
+
+[social]
+  # Link your social networking accounts to the side menu
+  # by entering your username or ID.
+  
+  # SNS microblogging
+  weibo = "weiboweibo"
+  # Techie
+  github = "likemilk"

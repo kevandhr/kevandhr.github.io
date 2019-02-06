@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<meta name="author" content="Kai Feng">
+		<meta name="description" content="World Peace">
+		<meta name="generator" content="Hugo 0.53" />
+		<title>02 NOTE git &middot; World Peace</title>
+		<link rel="shortcut icon" href="https://localhost:1313/images/favicon.ico">
+		<link rel="stylesheet" href="https://localhost:1313/css/style.css">
+		<link rel="stylesheet" href="https://localhost:1313/css/highlight.css">
+
+		
+		<link rel="stylesheet" href="https://localhost:1313/css/font-awesome.min.css">
+		
+
+		
+
+		
+	</head>
+
+    <body>
+       <nav class="main-nav">
+	
+	
+		<a href='https://localhost:1313/'> <span class="arrow">←</span>Home</a>
+	
+	<a href='https://localhost:1313/posts'>Archive</a>
+	<a href='https://localhost:1313/tags'>Tags</a>
+	<a href='https://localhost:1313/about'>About</a>
+
+	
+
+	
+</nav>
+
+
+        <section id="wrapper" class="post">
+            <article>
+                <header>
+                    <h1>
+                        02 NOTE git
+                    </h1>
+                    <h2 class="headline">
+                    Jan 30, 2019 11:23
+                    · 366 words
+                    · 1 minute read
+                      <span class="tags">
+                      
+                      </span>
+                    </h2>
+                </header>
+                
+                <section id="post-body">
+                    
+
+<h2 id="一-常用">一、 常用</h2>
+
+<pre><code>git clone http://dev.kidf.eu:88/scroll/scroll-lang-cn-bundle.git
+
+git status
+
+git checkout
+
+git add .
+git add scroll-lang-cn-bundle/src/test
+
+git checkout
+
+git checkout -b develop //新建并切换到新分支
+
+git commit
+
+git checkout develop //切换到新分支
+git push origin develop
+
+git branch //查看所有本地分支
+git branch -a //查看所有分支
+git branch issue1 //新建一个分支，没有切换到新分支
+//删除分支
+git branch -d testbranch1
+git push origin --delete testbranch1
+git push
+</code></pre>
+
+<h2 id="二-回退">二、 回退</h2>
+
+<pre><code>git log //先找到需要到达的哈希值
+
+git reset --hard 2f86f9a823c744febdc79cca0616f6f93f31a14d //重置于此
+</code></pre>
+
+<h2 id="三-添加ssh-key">三、 添加ssh key</h2>
+
+<pre><code>1. 进入git bash
+
+    git config --global user.name &quot;kai&quot;
+    git config --global user.email &quot;fengk1992@126.com&quot;
+
+    ssh-keygen -t rsa -C &quot;fengk1992@126.com&quot;
+    //按3个回车，则密码为空。默认地址C:\Users\milk\.ssh
+
+2. 在网站上添加id_rsa.pub里的内容
+
+3. 测试之
+
+$ ssh git@github.com
+
+显示结果
+    The authenticity of host 'github.com (198.19.0.112)' can't be established.
+    RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
+    Are you sure you want to continue connecting (yes/no)? yes
+    Warning: Permanently added 'github.com,198.19.0.112' (RSA) to the list of known hosts.
+    PTY allocation request failed on channel 0
+    Hi kailiuliuliu! You've successfully authenticated, but GitHub does not provide shell access.
+    Connection to github.com closed.
+</code></pre>
+
+<h2 id="四-附注">四、 附注</h2>
+
+<pre><code>1&gt; 首先用电脑生成 ssh key， 并在网页添加到账户的ssh keys中
+
+/d/programming/15eclipse03_fdnlp/wd
+
+git clone git@dev.kidf.eu:scroll/scroll.git
+git clone git@dev.kidf.eu:scroll/scroll-examples.git
+git clone git@github.com:milk0313/HelloJena.git
+
+
+git config user.name
+
+git config user.email
+
+$ git config --global user.name &quot;username&quot;
+
+$ git config --global user.email &quot;email&quot;
+
+git add *.*
+
+git push origin master:fengkai
+</code></pre>
+
+                </section>
+            </article>
+
+            
+
+            
+
+            
+
+            <footer id="footer">
+    
+        <div id="social">
+
+	
+	
+    <a class="symbol" href="https://www.facebook.com/">
+        <i class="fa fa-facebook-square"></i>
+    </a>
+    
+    <a class="symbol" href="https://github.com/likemilk">
+        <i class="fa fa-github-square"></i>
+    </a>
+    
+    <a class="symbol" href="https://www.twitter.com/">
+        <i class="fa fa-twitter-square"></i>
+    </a>
+    
+    <a class="symbol" href="https://www.weibo.com">
+        <i class="fa fa-weibo"></i>
+    </a>
+    
+
+
+</div>
+
+    
+    <p class="small">
+    
+       © Copyright 2019 <i class="fa fa-heart" aria-hidden="true"></i> Kai Feng
+    
+    </p>
+    <p class="small">
+        Powered by <a href="http://www.gohugo.io/">Hugo</a> Theme By <a href="https://github.com/nodejh/hugo-theme-cactus-plus">nodejh</a>
+    </p>
+</footer>
+
+        </section>
+
+        <script src="https://localhost:1313/js/jquery-3.3.1.min.js"></script>
+<script src="https://localhost:1313/js/main.js"></script>
+<script src="https://localhost:1313/js/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+
+
+    </body>
+</html>

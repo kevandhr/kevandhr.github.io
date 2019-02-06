@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<meta name="author" content="Kai Feng">
+		<meta name="description" content="World Peace">
+		<meta name="generator" content="Hugo 0.53" />
+		<title>08 NOTE postgre &middot; World Peace</title>
+		<link rel="shortcut icon" href="https://localhost:1313/images/favicon.ico">
+		<link rel="stylesheet" href="https://localhost:1313/css/style.css">
+		<link rel="stylesheet" href="https://localhost:1313/css/highlight.css">
+
+		
+		<link rel="stylesheet" href="https://localhost:1313/css/font-awesome.min.css">
+		
+
+		
+
+		
+	</head>
+
+    <body>
+       <nav class="main-nav">
+	
+	
+		<a href='https://localhost:1313/'> <span class="arrow">←</span>Home</a>
+	
+	<a href='https://localhost:1313/posts'>Archive</a>
+	<a href='https://localhost:1313/tags'>Tags</a>
+	<a href='https://localhost:1313/about'>About</a>
+
+	
+
+	
+</nav>
+
+
+        <section id="wrapper" class="post">
+            <article>
+                <header>
+                    <h1>
+                        08 NOTE postgre
+                    </h1>
+                    <h2 class="headline">
+                    Feb 4, 2019 17:46
+                    · 455 words
+                    · 1 minute read
+                      <span class="tags">
+                      
+                      </span>
+                    </h2>
+                </header>
+                
+                <section id="post-body">
+                    
+
+<h3 id="postgres启动">postgres启动</h3>
+
+<pre><code>docker exec -it sweb-db psql swebcore sweb
+
+docker exec -it sweb-du-db psql swebcore sweb
+
+docker exec -it sweb-db psql swebtest swebtester
+
+cd '/media/fengkai/BLACK/programming/10_sweb/sweb-webapi-runtime' ;mvn jetty:run -Pdomain_development -DskipTests
+</code></pre>
+
+<h3 id="知识库查询">知识库查询</h3>
+
+<pre><code>SELECT * FROM concepts WHERE ID IN ()
+
+select count(*) from complex_types;
+select count(*) from complex_instances where complex_type_id=605;40973个paper。
+select count(*) from complex_instances where complex_type_id=3;146127个person。
+SELECT * FROM complex_instances WHERE complex_type_id=605 limit 10
+
+DELETE FROM complex_instances WHERE creation_date &gt; '2018-10-29'
+
+select * from knowledge_bases;
+select * from entity_bases;
+
+select * from query_node_trees;
+
+\d query_node_trees
+</code></pre>
+
+<h3 id="常用命令">常用命令</h3>
+
+<pre><code>\c  显示当前用户  更改用户连接
+    \c database username
+    \c database
+    \c - swebtester 
+
+\du 显示当前数据库所有用户
+\dt 显示表
+\d  显示用户生成的数据库列表
+\d tablename  显示某个表列属性
+
+\l  数据库列表
+\q  退出
+
+\x  单行显示  \x off
+
+\timing on 显示SQL语句执行时间 \timing off
+
+
+所有的表总数
+    select count(*) from pg_tables;
+数据表
+    alter table smallint rename to integer;
+    alter table integer rename column id to id1;
+    \h alter table 
+
+创建用户
+    create user xxx with password 'xxxxxx';
+    alter user xxx with password 'yyyy';
+
+    note postgres
+
+    create user sweb with password '1111';
+
+    \i e:/downloads/sweb-ukc-v1.1.1-kb.only.sql
+</code></pre>
+
+<h3 id="pg-dump命令可以导出数据库中的表结构">pg_dump命令可以导出数据库中的表结构。</h3>
+
+<pre><code>-s  选项用来只导出表结构，而不会导出表中的数据
+-t  选项用来指定要导出的数据库表
+
+pg_dump -U postgres -t system_calls wangye &gt; ./test.sql
+
+
+docker exec -it sweb-db pg_dump -U sweb swebtest &gt; sweb-db_swebtest.sql
+
+docker exec -it sweb-db pg_dump -U sweb swebcore &gt; sweb-db_swebcore.sql
+docker exec -it sweb-db pg_dump -U sweb swebcore -s &gt; sweb-db_swebcore_tables.sql
+
+docker exec -it sweb-du-db pg_dump -U sweb swebcore &gt; /media/fengkai/WHITE/20181022_work_competencemanagement/some_data_backup/sweb-du-db_swebcore.sql
+docker exec -it sweb-du-db pg_dump -U sweb swebcore -s &gt; sweb-du-db_swebcore_tables.sql
+</code></pre>
+
+<h3 id="windows">windows</h3>
+
+<pre><code>port 5433
+
+pg_ctl.exe start -w -D ../data
+
+user pwd
+postgres postgres
+
+alter user sweb with superuser;
+
+create database swebcore with owner sweb template postgis;
+
+
+drop
+
+\i e:/some_nlp_working/resources_nlp/lkc-cn.sql
+</code></pre>
+
+                </section>
+            </article>
+
+            
+
+            
+
+            
+
+            <footer id="footer">
+    
+        <div id="social">
+
+	
+	
+    <a class="symbol" href="https://www.facebook.com/">
+        <i class="fa fa-facebook-square"></i>
+    </a>
+    
+    <a class="symbol" href="https://github.com/likemilk">
+        <i class="fa fa-github-square"></i>
+    </a>
+    
+    <a class="symbol" href="https://www.twitter.com/">
+        <i class="fa fa-twitter-square"></i>
+    </a>
+    
+    <a class="symbol" href="https://www.weibo.com">
+        <i class="fa fa-weibo"></i>
+    </a>
+    
+
+
+</div>
+
+    
+    <p class="small">
+    
+       © Copyright 2019 <i class="fa fa-heart" aria-hidden="true"></i> Kai Feng
+    
+    </p>
+    <p class="small">
+        Powered by <a href="http://www.gohugo.io/">Hugo</a> Theme By <a href="https://github.com/nodejh/hugo-theme-cactus-plus">nodejh</a>
+    </p>
+</footer>
+
+        </section>
+
+        <script src="https://localhost:1313/js/jquery-3.3.1.min.js"></script>
+<script src="https://localhost:1313/js/main.js"></script>
+<script src="https://localhost:1313/js/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+
+
+    </body>
+</html>

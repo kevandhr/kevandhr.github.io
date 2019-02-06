@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<meta name="author" content="Kai Feng">
+		<meta name="description" content="World Peace">
+		<meta name="generator" content="Hugo 0.53" />
+		<title>04 NOTE latex &middot; World Peace</title>
+		<link rel="shortcut icon" href="https://localhost:1313/images/favicon.ico">
+		<link rel="stylesheet" href="https://localhost:1313/css/style.css">
+		<link rel="stylesheet" href="https://localhost:1313/css/highlight.css">
+
+		
+		<link rel="stylesheet" href="https://localhost:1313/css/font-awesome.min.css">
+		
+
+		
+
+		
+	</head>
+
+    <body>
+       <nav class="main-nav">
+	
+	
+		<a href='https://localhost:1313/'> <span class="arrow">←</span>Home</a>
+	
+	<a href='https://localhost:1313/posts'>Archive</a>
+	<a href='https://localhost:1313/tags'>Tags</a>
+	<a href='https://localhost:1313/about'>About</a>
+
+	
+
+	
+</nav>
+
+
+        <section id="wrapper" class="post">
+            <article>
+                <header>
+                    <h1>
+                        04 NOTE latex
+                    </h1>
+                    <h2 class="headline">
+                    Feb 4, 2019 17:45
+                    · 476 words
+                    · 1 minute read
+                      <span class="tags">
+                      
+                      </span>
+                    </h2>
+                </header>
+                
+                <section id="post-body">
+                    
+
+<h2 id="三-常用">三、 常用</h2>
+
+<pre><code>显示直立文本：\textup{文本}
+意大利斜体：\textit{文本}
+slanted斜体：\textsl{文本}
+显示小体大写文本：\textsc{文本}
+中等权重：\textmd{文本}
+加粗命令：\textbf{文本}
+默认值：\textnormal{文本}
+</code></pre>
+
+<h2 id="二-一些样例">二、 一些样例</h2>
+
+<pre><code>github 吉林大学论文
+github 清华大学论文
+github 中科院论文
+github 浙江大学本科生毕业论文
+</code></pre>
+
+<h2 id="一-安装latex环境">一、 安装latex环境</h2>
+
+<pre><code>&gt; windows下
+    1 下载安装basic-miktex-2.9.6813-x64.exe  网址miktex.org
+    2 安装texmaker
+    3 texmaker 会提示缺失的包
+</code></pre>
+
+<h2 id="副注">副注</h2>
+
+<pre><code>&gt; 备份文件
+.tex
+.eps
+
+&gt; 中文
+    &gt; 编译  直接XeLaTex  
+    &gt; The xeCJK package requires XeTeX to function.
+</code></pre>
+
+<h2 id="编译错误-error">编译错误 error</h2>
+
+<pre><code>&gt; Underfull \hbox (badness 10000) in paragraph at lines 4--5
+
+    99 times out of 100 it means you have \\ incorrectly placed at the end of a paragraph. 
+
+    A box is underfull if there is not enough content to fill its stated size.
+
+    If you go \hbox to 5cm{A} then it makes a horizontal box (\hbox) 5cm wide just containing an A so it is underfull and will generate a warning, 
+    the exact amount of badness depends how much any white space is over-stretched, but here there is no white space so it is infinitely bad, 
+    which is arbitrarily truncated to the maximum value, 10000.
+
+    By placing \\ at the end of a paragraph you force a line break but there is nothing at all in the forced final line of the paragraph 
+    so it is a box that is \textwidth wide with no content. 
+    It appears a bit like vertical space but it is not it is a spurious line at the end of the paragraph. 
+    So for example it does not stretch and is not dropped at the start of a page.
+</code></pre>
+
+                </section>
+            </article>
+
+            
+
+            
+
+            
+
+            <footer id="footer">
+    
+        <div id="social">
+
+	
+	
+    <a class="symbol" href="https://www.facebook.com/">
+        <i class="fa fa-facebook-square"></i>
+    </a>
+    
+    <a class="symbol" href="https://github.com/likemilk">
+        <i class="fa fa-github-square"></i>
+    </a>
+    
+    <a class="symbol" href="https://www.twitter.com/">
+        <i class="fa fa-twitter-square"></i>
+    </a>
+    
+    <a class="symbol" href="https://www.weibo.com">
+        <i class="fa fa-weibo"></i>
+    </a>
+    
+
+
+</div>
+
+    
+    <p class="small">
+    
+       © Copyright 2019 <i class="fa fa-heart" aria-hidden="true"></i> Kai Feng
+    
+    </p>
+    <p class="small">
+        Powered by <a href="http://www.gohugo.io/">Hugo</a> Theme By <a href="https://github.com/nodejh/hugo-theme-cactus-plus">nodejh</a>
+    </p>
+</footer>
+
+        </section>
+
+        <script src="https://localhost:1313/js/jquery-3.3.1.min.js"></script>
+<script src="https://localhost:1313/js/main.js"></script>
+<script src="https://localhost:1313/js/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+
+
+    </body>
+</html>

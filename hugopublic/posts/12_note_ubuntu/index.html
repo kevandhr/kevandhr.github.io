@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<meta name="author" content="Kai Feng">
+		<meta name="description" content="World Peace">
+		<meta name="generator" content="Hugo 0.53" />
+		<title>12 NOTE ubuntu &middot; World Peace</title>
+		<link rel="shortcut icon" href="https://localhost:1313/images/favicon.ico">
+		<link rel="stylesheet" href="https://localhost:1313/css/style.css">
+		<link rel="stylesheet" href="https://localhost:1313/css/highlight.css">
+
+		
+		<link rel="stylesheet" href="https://localhost:1313/css/font-awesome.min.css">
+		
+
+		
+
+		
+	</head>
+
+    <body>
+       <nav class="main-nav">
+	
+	
+		<a href='https://localhost:1313/'> <span class="arrow">←</span>Home</a>
+	
+	<a href='https://localhost:1313/posts'>Archive</a>
+	<a href='https://localhost:1313/tags'>Tags</a>
+	<a href='https://localhost:1313/about'>About</a>
+
+	
+
+	
+</nav>
+
+
+        <section id="wrapper" class="post">
+            <article>
+                <header>
+                    <h1>
+                        12 NOTE ubuntu
+                    </h1>
+                    <h2 class="headline">
+                    Feb 4, 2019 17:57
+                    · 1120 words
+                    · 3 minute read
+                      <span class="tags">
+                      
+                      </span>
+                    </h2>
+                </header>
+                
+                <section id="post-body">
+                    
+
+<h4 id="recently">recently</h4>
+
+<pre><code>sudo apt autoremove
+
+sudo apt install unrar
+unrar x file
+
+sudo apt install okular okular-extra-backends
+</code></pre>
+
+<h2 id="常用">常用</h2>
+
+<pre><code>ls -a
+ll
+exit
+w
+who
+whoami
+which
+last
+pwd
+bg
+fg
+fg %1
+bash
+sudo su
+man
+man tee
+history | sort -nr &gt; history.txt
+echo $LANG
+sudo shutdown -h now
+sudo shutdown -r now
+sudo cat /etc/group
+
+dpkg -l
+dpkg -l *netease*
+sudo dpkg -i package_file.deb
+sudo dpkg -r package_name
+sudo apt -f install
+
+
+df -l
+umount -l /dev/sda1
+sudo mount /dev/sda1 ~/ablack
+
+jobs
+top
+tree
+ps
+ps -aux
+sudo kill 22137 22138
+netstat -ano
+mkdir Pepper
+mv file1 file2
+rm file
+cp file1 file2
+cat file.txt
+
+netstat -ano
+netstat -aon|findstr 8008
+tasklist|findstr &quot;2596&quot;
+
+
+解压：unzip FileName.zip -d ToFileName
+压缩：zip -r filename.zip filesdir
+
+解压：tar jxvf FileName.tar.bz2
+压缩：tar jcvf FileName.tar.bz2 DirName
+
+tar zxvf apache-maven-3.5.4-bin.tar.gz
+
+wget www.google.com 下载一个网页
+wget -N http://cython.org/release/Cython-0.21.zip
+
+tar xjf Python-3.6.1.tgz 解压缩
+sudo update-alternatives --config python
+
+chmod +x note4installpackages.sh
+./note4installpackages.sh
+
+sudo apt update
+sudo apt upgrade
+
+git
+ssh
+cat ~/.ssh/id_rsa.pub
+
+env
+env | grep HOME
+
+id
+id -nG
+
+subl ~/.m2/settings.xml
+
+docker
+docker ps
+docker ps -a
+
+sudo service | 10
+</code></pre>
+
+<h4 id="键盘失灵">键盘失灵</h4>
+
+<pre><code>xinput --disable 11
+xinput --enable 11
+</code></pre>
+
+<h4 id="install-protege">install- protege</h4>
+
+<pre><code>tar zxvf Protege-5.5.0-beta-8-linux.tar.gz Protege-5.5.0-beta-8
+
+sudo mv Protege-5.5.0-beta-8 /usr/local
+
+sudo ln -s /usr/local/Protege-5.5.0-beta-8/run.sh /usr/local/bin/protege
+
+protege
+</code></pre>
+
+<h4 id="install-hugo">install- hugo</h4>
+
+<pre><code>sudo apt install hugo
+hugo version
+cd '/media/fengkai/BLACK/programming/08_wd_html/testhugo' 
+hugo new site quickstart
+cd quickstart
+cd themes
+git clone https://github.com/budparr/gohugo-theme-ananke.git
+git clone https://github.com/yoshiharuyamashita/blackburn.git
+git clone https://github.com/olOwOlo/hugo-theme-even.git themes/hugo-theme-even
+hugo new posts/my-first-post.md #这时会在content/目录上生成一个post文件夹，这个文件夹就是用来存储你所写的文章
+manually edit the posts/my-first-post.md, it is markdown.
+hugo server -D
+    hugo server -t gohugo-theme-ananke --buildDrafts
+hugo server --buildDrafts
+hugo 
+hugo --buildDrafts
+
+sudo apt remove hugo
+
+tar xzvf hugo_0.53_Linux-64bit.tar.gz hugo_.53
+sudo mv hugo_0.53 /usr/local
+sudo ln /usr/local/hugo_0.53/hugo /usr/local/bin/hugo
+</code></pre>
+
+<h4 id="输入法">输入法</h4>
+
+<pre><code>sudo apt remove ibus
+sudo apt remove fcitx
+
+sudo apt install fcitx
+sudo dpkg -i sogoupinyin_2.2.0.0108_amd64.deb 
+
+rm -r ~/.config/SogouPY ~/.config/SogouPY.users ~/.config/sogou-qimpanel
+
+killall fcitx;killall sogou-qimpanel
+
+fcitx
+</code></pre>
+
+<h4 id="android-环境下载">android 环境下载</h4>
+
+<pre><code>0.使用intelj
+
+1.下载 sdk-tools-linux-4333796.zip 147M
+
+./sdkmanager &quot;platform-tools&quot; &quot;platforms;android-23&quot;
+
+./sdkmanager &quot;build-tools;28.0.3&quot; &quot;patcher;v4&quot; &quot;emulator&quot; &quot;docs&quot; &quot;extras;android;m2repository&quot; &quot;extras;google;m2repository&quot;
+
+./sdkmanager &quot;extras;m2repository;com;android;support;constraint;constraint-layout;1.0.2&quot;
+./sdkmanager &quot;extras;m2repository;com;android;support;constraint;constraint-layout-solver;1.0.2&quot;
+./sdkmanager &quot;system-images;android-22;google_apis;armeabi-v7a&quot;
+</code></pre>
+
+<!--
+####
+    http://knowdive.disi.unitn.it/wp-login.php?action=rp
+
+    Kaikaixinxin
+
+    https://www.dbdesigner.net/login
+    fengk1992@126.com d222222
+-->
+
+<h4 id="latex">latex</h4>
+
+<pre><code>latexmk -pvc -pdf -shell-escape main_report.tex 
+latexmk -pvc -pdf main_report.tex 
+
+rm *.vrb *.snm *.toc *.pyg *.out *.nav *.log *.fls *.fdb_latexmk *.aux *.synctex.gz
+
+\par
+\indent 
+\hspace{2em}
+\vspace{1em}
+\vspace{-0.3em}
+并集 $\cup$
+交集 $\cap$
+局部字体变小 {正常字体\tiny{变小字体}} 额外需要外层大括号控制范围
+
+
+\begin{figure}[!ht]
+    \vspace{-1em}
+        \centering
+        \includegraphics[width = 8cm]{img_nico.jpg}
+        \caption{image caption}
+        \label{fig999}
+    \vspace{-1em}
+\end{figure}
+</code></pre>
+
+<h4 id="批量修改文件名">批量修改文件名</h4>
+
+<pre><code>ls &gt; tempfilelist.txt
+mv filename_original filename_wantto
+文件名后缀改为.sh，tempfilelist.sh
+./tempfilelist.sh
+
+find (.*)\n
+replace mv $1 $1\n
+</code></pre>
+
+<h4 id="language-zh-cn-gimp">LANGUAGE=zh_CN gimp</h4>
+
+<h4 id="ffmpeg">ffmpeg　</h4>
+
+<h6 id="合并音频视频mp3mp4">合并音频视频mp3mp4</h6>
+
+<pre><code>ffmpeg -i part10.mp3 -i part10.mp4 /media/kai/WHITE/video.mp4
+</code></pre>
+
+<h6 id="linux下使用-ffmpeg-实现mp4转gif">linux下使用 ffmpeg 实现MP4转gif</h6>
+
+<pre><code>sudo apt-get install ffmpeg
+
+ffmpeg -t 3 -ss 00:00:02 -i aePortal.mp4 aePortal.gif
+
+ffmpeg -i input.mp4 -ss 00:00:00 -to 00:02:00 -c copy output.mp4
+</code></pre>
+
+<h4 id="trento-打印机-4175">trento 打印机 4175</h4>
+
+<h4 id="ubuntu18-重启窗口">ubuntu18 重启窗口</h4>
+
+<pre><code>ALT+F2 输入r  即可显示效果
+</code></pre>
+
+<h4 id="禁用触摸板">禁用触摸板</h4>
+
+<pre><code>禁用触摸板的命令:sudo rmmod psmouse
+启用触摸板的命令:sudo modprobe  psmou
+</code></pre>
+
+<h4 id="远程登录">远程登录</h4>
+
+<pre><code>python 2
+sudo update-alternatives --config python
+
+sudo apt-get install xrdp
+sudo apt-get install vnc4server
+sudo apt-get install xfce4
+sudo apt-get install xubuntu-desktop
+echo &quot;xfce4-session&quot; &gt;~/.xsession
+sudo service xrdp restart
+
+dash desktop sharing 桌面共享 
+netstat -ntl 查看3389端口在监听
+查看IP地址，用windows远程桌面连接
+milk 2345wert
+</code></pre>
+
+<h4 id="mysql">mysql</h4>
+
+<pre><code>sudo apt-get install mysql-server
+sudo apt-get install mysql-server mysql-client
+
+以mysql服务为例：
+#开机自动开启mysql服务
+sudo update-rc.d mysql defaults
+#开机禁止mysql服务
+sudo update-rc.d mysql disable
+
+#察看mysql服务状态
+sudo chkconfig –list mysql
+mysql 0:off 1:off 2:on 3:on 4:on 5:on 6:off
+#若没有chkconfig命令，请先安装该命令
+sudo apt-get install chkconfig
+
+#手动启动mysql服务
+sudo service mysql start
+#手动关闭mysql服务
+sudo service mysql stop
+</code></pre>
+
+<h4 id="输入法ibus">输入法ibus</h4>
+
+<pre><code>killall ibus-daemon
+ibus-daemon -d
+然后就可以看到iBus图标了
+
+sudo adduser xxx
+sudo userdel [-r] xxx
+</code></pre>
+
+<h4 id="修改grub启动项">修改grub启动项</h4>
+
+<pre><code>sudo gedit /boot/grub/grub.cfg
+sudo gedit /etc/default/grub
+sudo update-grub
+</code></pre>
+
+<h4 id="没有那个文件或目录">没有那个文件或目录</h4>
+
+<pre><code>/bin/bash^M: 没有那个文件或目录
+
+cat -A note4installpackages.sh  查看\n及\r空白符，\n会显示为$，而\r会显示为^M。
+sed -i 's/\r$//' note4installpackages.sh
+</code></pre>
+
+<h4 id="结果终端提示-资源暂时不可用">结果终端提示:资源暂时不可用</h4>
+
+<pre><code>结果终端提示:
+无法获得锁 /var/lib/dpkg/lock - open (11: 资源暂时不可用) 
+E: 无法锁定管理目录(/var/lib/dpkg/)，是否有其他进程正占用它？”
+
+解决办法如下：
+1.终端输入 ps  -aux ，列出进程,找到含有apt-get的进程，直接sudo kill PID解决。
+2.强制解锁--命令:
+sudo rm /var/cache/apt/archives/lock
+sudo rm /var/lib/dpkg/lock
+</code></pre>
+
+                </section>
+            </article>
+
+            
+
+            
+
+            
+
+            <footer id="footer">
+    
+        <div id="social">
+
+	
+	
+    <a class="symbol" href="https://www.facebook.com/">
+        <i class="fa fa-facebook-square"></i>
+    </a>
+    
+    <a class="symbol" href="https://github.com/likemilk">
+        <i class="fa fa-github-square"></i>
+    </a>
+    
+    <a class="symbol" href="https://www.twitter.com/">
+        <i class="fa fa-twitter-square"></i>
+    </a>
+    
+    <a class="symbol" href="https://www.weibo.com">
+        <i class="fa fa-weibo"></i>
+    </a>
+    
+
+
+</div>
+
+    
+    <p class="small">
+    
+       © Copyright 2019 <i class="fa fa-heart" aria-hidden="true"></i> Kai Feng
+    
+    </p>
+    <p class="small">
+        Powered by <a href="http://www.gohugo.io/">Hugo</a> Theme By <a href="https://github.com/nodejh/hugo-theme-cactus-plus">nodejh</a>
+    </p>
+</footer>
+
+        </section>
+
+        <script src="https://localhost:1313/js/jquery-3.3.1.min.js"></script>
+<script src="https://localhost:1313/js/main.js"></script>
+<script src="https://localhost:1313/js/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+
+
+    </body>
+</html>

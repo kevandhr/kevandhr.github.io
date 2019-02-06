@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<meta name="author" content="Kai Feng">
+		<meta name="description" content="World Peace">
+		<meta name="generator" content="Hugo 0.53" />
+		<title>11 NOTE ubuntu think &middot; World Peace</title>
+		<link rel="shortcut icon" href="https://localhost:1313/images/favicon.ico">
+		<link rel="stylesheet" href="https://localhost:1313/css/style.css">
+		<link rel="stylesheet" href="https://localhost:1313/css/highlight.css">
+
+		
+		<link rel="stylesheet" href="https://localhost:1313/css/font-awesome.min.css">
+		
+
+		
+
+		
+	</head>
+
+    <body>
+       <nav class="main-nav">
+	
+	
+		<a href='https://localhost:1313/'> <span class="arrow">←</span>Home</a>
+	
+	<a href='https://localhost:1313/posts'>Archive</a>
+	<a href='https://localhost:1313/tags'>Tags</a>
+	<a href='https://localhost:1313/about'>About</a>
+
+	
+
+	
+</nav>
+
+
+        <section id="wrapper" class="post">
+            <article>
+                <header>
+                    <h1>
+                        11 NOTE ubuntu think
+                    </h1>
+                    <h2 class="headline">
+                    Feb 4, 2019 17:48
+                    · 2254 words
+                    · 5 minute read
+                      <span class="tags">
+                      
+                      </span>
+                    </h2>
+                </header>
+                
+                <section id="post-body">
+                    
+
+<h4 id="当前">当前</h4>
+
+<h4 id="sudo-apt-remove-sogoupinyin">sudo apt remove sogoupinyin</h4>
+
+<h4 id="sudo-apt-remove-umbrello">sudo apt remove umbrello</h4>
+
+<h4 id="install-wordnet">install- wordnet</h4>
+
+<pre><code>sudo apt install wordnet
+wn
+wnb
+</code></pre>
+
+<h4 id="install-dbvis">install- dbvis</h4>
+
+<pre><code>sudo dpkg -i dbvis_linux_10_0_15.deb
+dbvis
+</code></pre>
+
+<h4 id="install-cmatrix-sl">install- cmatrix sl</h4>
+
+<pre><code>sudo apt-get install cmatrix
+cmatrix
+
+sudo apt-get install sl
+sl
+</code></pre>
+
+<h4 id="install-smplayer">install- smplayer</h4>
+
+<pre><code>sudo add-apt-repository ppa:rvm/smplayer 
+sudo apt update 
+sudo apt install smplayer smplayer-themes smplayer-skins
+</code></pre>
+
+<h4 id="install-dia-common">install- dia-common</h4>
+
+<pre><code>sudo apt-get install dia-common
+</code></pre>
+
+<h4 id="install-rapidminer">install- rapidminer</h4>
+
+<pre><code>unzip rapidminer-studio-9.0.3.zip 
+cd rapidminer-studio/
+./RapidMiner-Studio.sh 
+</code></pre>
+
+<h4 id="install-xmind">install- XMind</h4>
+
+<pre><code>sudo dpkg -i XMind-ZEN-for-Linux-64bit.deb
+sudo apt -f install
+sudo dpkg -i XMind-ZEN-for-Linux-64bit.deb
+</code></pre>
+
+<h4 id="install-openshot">install- openshot</h4>
+
+<pre><code>    sudo apt-get install openshot libavformat-extra-53
+sudo apt-get install openshot     
+    apt-cache search libavformat
+</code></pre>
+
+<h4 id="install-zoom">install- zoom</h4>
+
+<pre><code>sudo dpkg -i zoom_amd64.deb
+sudo apt-get -f install
+sudo dpkg -i zoom_amd64.deb
+    sudo apt remove zoom
+</code></pre>
+
+<h4 id="重启搜狗输入法">重启搜狗输入法</h4>
+
+<pre><code>rm -r ~/.config/SogouPY ~/.config/SogouPY.users ~/.config/sogou-qimpanel;killall fcitx;killall sogou-qimpanel;fcitx
+</code></pre>
+
+<h4 id="修改登录界面的背景">修改登录界面的背景</h4>
+
+<pre><code>cp currentdir/mypicture.jpg  /usr/share/backgrounds/
+sudo subl /etc/alternatives/gdm3.css
+    find lockdialog
+    #lockDialogGroup {
+        background: #000000 url(/usr/share/backgrounds/bg4login.jpg);
+        background-repeat: none;}
+</code></pre>
+
+<h4 id="install-netease-cloud-music">install- netease cloud music</h4>
+
+<pre><code>sudo dpkg -i netease-cloud-music_1.1.0_amd64_ubuntu.deb
+sudo netease-cloud-music
+</code></pre>
+
+<h4 id="install-weather">install- weather</h4>
+
+<pre><code>sudo apt-get install gnome-shell-extension-weather
+ubuntu软搜索netspeed安装
+</code></pre>
+
+<p>改变显卡驱动
+    lspci -k | grep -A 2 -i &ldquo;VGA&rdquo;
+    sudo ubuntu-drivers devices
+    sudo apt install nvidia-driver-390
+    software-properties-gtk
+    重启</p>
+
+<h4 id="install-gettext">install- gettext</h4>
+
+<pre><code>sudo apt-get install gettext
+</code></pre>
+
+<h4 id="install-gnome-tweak-tool">install- gnome-tweak-tool</h4>
+
+<pre><code>sudo apt install gnome-tweak-tool
+</code></pre>
+
+<h4 id="install-wps">install- wps</h4>
+
+<pre><code>sudo dpkg -i wps-office_10.1.0.6757_amd64.deb
+</code></pre>
+
+<h4 id="install-kdenlive">install- kdenlive</h4>
+
+<pre><code>sudo add-apt-repository ppa:sunab/kdenlive-release
+sudo apt update
+
+    sudo apt install kdenlive ladspa
+sudo apt install kdenlive
+
+安装中文
+tar jxvf kdenlive.mo.tar.bz2 
+sudo mv kdenlive.mo /usr/share/locale/zh_CN/LC_MESSAGES/
+</code></pre>
+
+<h1 id="升级到-ubuntu-18-2018-10-7">升级到 ubuntu 18，2018.10.7</h1>
+
+<p>sudo apt update
+sudo apt upgrade
+sudo apt dist-upgrade</p>
+
+<p>sudo do-release-upgrade
+sudo ln -sf /usr/bin/python2.7 /usr/bin/python
+sudo do-release-upgrade</p>
+
+<h1 id="从-ubuntu-16-2018">从 ubuntu 16 2018</h1>
+
+<h4 id="install-vlc">install- vlc</h4>
+
+<pre><code>sudo apt-get install vlc
+</code></pre>
+
+<h4 id="install-fceux">install- fceux</h4>
+
+<pre><code>sudo apt install fceux
+sudo apt remove fceux
+
+sudo apt install zsnes
+sudo apt remove zsnes
+</code></pre>
+
+<h4 id="更新">更新</h4>
+
+<pre><code>sudo apt update
+sudo apt upgrade
+</code></pre>
+
+<h4 id="install-wine">install- wine</h4>
+
+<pre><code>sudo apt install wine
+wine
+    sudo vim /etc/default/locale
+
+cd '/media/fengkai/WATHET/program4ubuntu/Warcraft III' 
+wine &quot;War3&quot;.exe -opengl -window   失败
+winecfg
+
+####失败
+sudo apt-get install wine
+tab --&gt; ok
+Movies --&gt; _Movies
+--&gt;&gt;change the keyboard
+wine &quot;War3&quot;.exe  -opengl  -windows
+####
+
+sudo apt install wine playonlinux
+</code></pre>
+
+<h4 id="install-netease-cloud-music-1">install- netease cloud music</h4>
+
+<pre><code>sudo dpkg -i netease-cloud-music_1.1.0_amd64_ubuntu.deb
+//缺失vlc包
+sudo apt -f install
+sudo dpkg -i netease-cloud-music_1.1.0_amd64_ubuntu.deb
+
+    sudo vim /usr/share/applications/netease-cloud-music.desktop
+    Exec=netease-cloud-music %U 修改为 
+    Exec=netease-cloud-music -no-sandbox %U
+//杀掉进程，终端输入
+rm -rf ~/.cache/netease-cloud-music
+
+dpkg -l *netease*
+sudo dpkg -r netease-cloud-music 
+</code></pre>
+
+<h4 id="install-wps-1">install- wps</h4>
+
+<pre><code>sudo dpkg -i wps-office_10.1.0.6757_amd64.deb
+sudo dpkg -i symbol-fonts_1.2_all.deb
+</code></pre>
+
+<h4 id="vim鼠标">vim鼠标</h4>
+
+<pre><code>vim --version
+python --version //python2
+sudo apt search vim-gnome
+sudo apt install vim-gnome
+vim --version
+</code></pre>
+
+<h4 id="install-mypaint">install- mypaint</h4>
+
+<pre><code>sudo apt install mypaint
+</code></pre>
+
+<h4 id="sudo-vim-etc-hostname">sudo vim /etc/hostname</h4>
+
+<pre><code>docker start sweb-db
+docker exec -it sweb-db psql swebcore sweb
+cd /media/fengkai/BLACK/programming/10_sweb/sweb-eb/
+mvn install
+cd ..
+git clone git@dev.kidf.eu:sweb/sweb-commons.git
+cd sweb-commons/
+ll
+mvn install -DskipTests
+cd ../sweb-eb/
+mvn install -DskipTests
+mvn test
+docker exec -it sweb-db psql swebcore sweb
+docker stop sweb-db
+</code></pre>
+
+<h4 id="install-latex">install- latex</h4>
+
+<pre><code>apt search texlive
+sudo apt install texlive-latex-recommended texlive-xetex
+sudo apt install texlive-lang-chinese
+apt search latexmk
+sudo apt install latexmk
+
+cd /media/fengkai/BLACK/programming/03_wd_latex/hello_latex
+vim .latexmkrc
+    $pdflatex=q/xelatex -synctex=1 %O %S/;
+    $pdf_previewer='start evince';
+latexmk -pvc -pdf hellolatex.tex
+//把.latexmkrc文件复制到home下以支持在所有文件夹latexmk命令
+
+-slides beamr
+latexmk -pvc -pdf -shell-escape main_report.tex 
+rm *.vrb *.snm *.toc *.pyg *.out *.nav *.log *.fls *.fdb_latexmk *.aux
+pip3 install Pygments
+</code></pre>
+
+<h4 id="install-vim">install- vim</h4>
+
+<pre><code>sudo apt install vim
+vim .vimrc
+    //home下 .vimrc文件
+    set mouse=a
+    set number
+
+cd /media/fengkai/BLACK/programming/10_sweb/
+git clone git@dev.kidf.eu:sweb/sweb-eb.git
+</code></pre>
+
+<h4 id="重装docker">重装docker</h4>
+
+<pre><code>cd
+sudo apt install docker
+sudo docker ps
+bash
+sudo apt remove docker
+
+sudo apt install curl
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+sudo add-apt-repository &quot;deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable&quot;
+sudo apt-get update
+lsb_release -a
+apt-cache policy docker-ce
+sudo apt-get install -y docker-ce
+sudo systemctl status docker
+sudo usermod -aG docker ${USER}
+su - ${USER}
+
+cd
+cd .m2/repository/
+ll
+tar zxvf scroll.tgz
+cd /media/fengkai/BLACK/programming/10_sweb/sweb-webapi-runtime
+mvn install
+cd
+cd .m2/repository/
+tar zxvf knappsack.tgz
+cd /media/fengkai/BLACK/programming/10_sweb/sweb-webapi-runtime
+mvn install
+</code></pre>
+
+<h4 id="install-maven">install- maven</h4>
+
+<pre><code>//sudo apt install maven
+tar zxvf apache-maven-3.5.4-bin.tar.gz
+sudo mv apache-maven-3.5.4 /opt/
+cd /opt/apache-maven-3.5.4/
+cd
+ls -a
+cd .local/bin/
+ln -s /opt/apache-maven-3.5.4/bin/mvn
+mvn -v
+</code></pre>
+
+<h4 id="install-inteljava">install- IntelJava</h4>
+
+<pre><code>tar zxvf ideaIU-2018.2.4.tar.gz
+sudo mv idea-IU-182.4505.22 /opt/
+cat #### install-Linux-tar.txt 
+cd /opt
+ls
+cd idea-IU-182.4505.22/
+ls
+cat #### install-Linux-tar.txt
+cd bin/
+ls
+cat idea.sh
+./idea.sh 
+</code></pre>
+
+<h4 id="docker">docker</h4>
+
+<pre><code>docker ps
+docker login registry.knowdocker-test.disi.unitn.it
+sudo mkdir -p /etc/docker/certs.d/registry.knowdocker-test.disi.unitn.it
+sudo subl /etc/docker/certs.d/registry.knowdocker-test.disi.unitn.it/ca.crt
+sudo systemctl restart docker
+docker login registry.knowdocker-test.disi.unitn.it
+docker pull registry.knowdocker-test.disi.unitn.it/db:1.0.0
+docker run -d --name sweb-db -v postgres-data:/var/lib/postgresql -e POSTGRES_PASSWORD=1111 -e POSTGRES_USERNAME=sweb -e POSTGRES_DB=swebcore -p 5432:5432 registry.knowdocker-test.disi.unitn.it/db:1.0.0
+docker stop sweb-db 
+docker logs sweb-db
+
+
+env
+env | grep HOME
+cat .bashrc
+cat .profile
+echo &quot;JAVA_HOME=&quot;/usr/local/jdk1.8.0_181&quot;
+echo &quot;JAVA_HOME=\&quot;/usr/local/jdk1.8.0_181\&quot;&quot; &gt;&gt; .bashrc
+source .bashrc
+env | grep HOME
+cat .bashrc
+echo $JAVA_HOME
+</code></pre>
+
+<h4 id="install-git">install- git</h4>
+
+<pre><code>sudo apt install git
+复制的windows里的ssh key，添加到网页账号里
+
+ssh key 有问题 
+    chmod 400 ~/.ssh/id_rsa
+</code></pre>
+
+<h4 id="vim-profile">vim ~/.profile</h4>
+
+<h4 id="install-java">install- java</h4>
+
+<pre><code>tar zxvf jdk-8u181-linux-x64.tar.gz
+sudo mv jdk1.8.0_181 /usr/local/
+java
+
+sudo update-alternatives --install /usr/bin/javac javac /usr/local/jdk1.8.0_181/bin/javac 1
+
+sudo update-alternatives --install /usr/bin/java java /usr/local/jdk1.8.0_181/bin/java 1
+</code></pre>
+
+<h4 id="install-firefox">install- firefox</h4>
+
+<pre><code>sudo apt update
+sudo apt install firefox
+</code></pre>
+
+<h4 id="install-okular-pdf">install- okular pdf</h4>
+
+<pre><code>sudo apt install okular
+</code></pre>
+
+<h4 id="系统时间和启动">系统时间和启动</h4>
+
+<pre><code>将你的硬件时钟设置为 不是 协调世界时（UTC）:
+timedatectl set-local-rtc 1
+
+sudo timedatectl set-local-rtc 1
+timedatectl
+sudo subl /etc/default/rcS 
+sudo update-grub
+sudo subl /etc/default/grub 
+
+让Ubuntu 使用本地时间的方法是：
+方法1：
+sudo gedit /etc/default/rcS
+把里面的 UTC=yes 改为 UTC=no 或者添加
+
+方法2：
+timedatectl
+sudo timedatectl set-local-rtc 1
+将你的硬件时钟设置为协调世界时（UTC）:
+timedatectl set-local-rtc 0
+</code></pre>
+
+<h4 id="opencc-繁体简体转换">opencc 繁体简体转换</h4>
+
+<h4 id="install-goodsync-未成功">install- goodsync 未成功</h4>
+
+<h4 id="install-sublime">install- sublime</h4>
+
+<pre><code>sudo add-apt-repository ppa:webupd8team/sublime-text-3
+sudo apt-get update
+sudo apt-get install sublime-text-installer
+    sudo apt-get remove sublime-text-installer
+
+    wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
+
+配置sublime中文支持
+需用subl命令启动sublime才能支持中文
+</code></pre>
+
+<h4 id="install-chrome">install- chrome</h4>
+
+<pre><code>sudo wget http://www.linuxidc.com/files/repo/google-chrome.list -P /etc/apt/sources.list.d/
+wget -q -O - https://dl.google.com/linux/linux_signing_key.pub  | sudo apt-key add -
+
+sudo apt-get update
+sudo apt-get install google-chrome-stable
+
+Ubuntu 16.04 Chrome浏览器安装flash player插件
+1：官网下载插件  flash palyer
+lash_player_npapi_linux_debug.x86_64.tar.gz
+2：解压 提取
+libpepflashplayer.so
+3：手动新建插件文件夹
+sudo mkdir /opt/google/chrome/PepperFlash
+4:手动复制插件：libpepflashplayer.so 到PepperFlash 文件夹
+sudo mv libpepflashplayer.so /opt/google/chrome/PepperFlash/libpepflashplayer.so 
+</code></pre>
+
+<h4 id="install-python3">install- python3</h4>
+
+<pre><code>//安装 pip3
+//配置默认python
+
+下载解压python3.6.1
+cd Python-3.6.1  
+./configure  
+make
+sudo make install 
+
+sudo update-alternatives --config python
+sudo update-alternatives --install /usr/bin/Python python /usr/bin/python2 100 
+sudo update-alternatives --install /usr/bin/python python /usr/local/bin/python3.6 150
+sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.5 150
+
+sudo apt install python3-pip
+
+安装 C/C++ 的编译环境和 gtk libgtk2.0-dev
+sudo apt-get install build-essential 
+sudo apt-get install libgtk2.0-dev
+
+sudo apt-get install python3-tk
+</code></pre>
+
+<h2 id="b524-thinkstation-ubuntu16-2017">b524 thinkstation ubuntu16 2017</h2>
+
+<h4 id="远程登录">远程登录</h4>
+
+<pre><code>需要 python 2
+sudo apt-get install xrdp
+sudo apt-get install vnc4server
+sudo apt-get install xfce4
+sudo apt-get install xubuntu-desktop
+echo &quot;xfce4-session&quot; &gt;~/.xsession
+sudo service xrdp restart
+dash desktop sharing 桌面共享 
+查看IP地址，用windows远程桌面连接
+b524 b524
+kai qwer1234
+
+sudo apt-get install dconf-tools
+dash dconf
+在“dconf系统配置编辑器”的org-gnome-desktop-remote access中
+关闭“require-encryption”（取消选中）
+
+sudo gedit /ver/log/xrdp-sesman.log
+</code></pre>
+
+<h4 id="显卡驱动">显卡驱动</h4>
+
+<pre><code>点桌面左上角搜索本机程序的图标，找到“附加驱动”
+在“附加驱动”里，系统会自动搜索N卡驱动，
+列表里会提供对应你显卡的最新版官方驱动。
+例如我的显卡是GTX750，选择第一项361.42就可以了。
+</code></pre>
+
+<h3 id="ubuntu-16-2016">ubuntu 16  2016</h3>
+
+<pre><code>sudo sublime /boot/grub/grub.cfg
+
+cd ../share
+ls
+ls &gt; grep su
+cd applications
+ls
+sudo mv sublime sublime.desktop
+sudo gedit sublime.desktop 
+ls
+cd /etc/gnome
+ls
+sudo gedit defaults.list 
+cd
+sudo update-alternatives --install /usr/bin/gnome-text-editor gnome-text-editor /usr/bin/sublime2 300
+sudo update-alternatives --config gnome-text-editor
+sublime
+cd /usr/bin
+ls
+sublime2
+mv sublime2 sublime
+sudo mv sublime2 sublime
+sublime
+cd
+sublime
+cd /usr/share/applications
+ls
+sudo sublime sublime.desktop
+cat sublime.desktop
+</code></pre>
+
+<h4 id="install-cups">install- cups</h4>
+
+<pre><code>sudo apt-get install cups
+sudo /etc/init.d/cups start
+sudo /etc/init.d/cups restart
+</code></pre>
+
+<h4 id="grub">grub</h4>
+
+<pre><code>sudo update-grub
+sudo reboot
+sudo gedit /boot/grub/grub.cfg
+update grub
+sudo gedit /boot/grub/grub.cfg
+sudo reboot
+
+sudo passwd fengkai 2
+
+ssh user@192.168.3.104
+</code></pre>
+
+<h4 id="install-latex-1">install- latex</h4>
+
+<pre><code>sudo mv l3kernel /usr/share/texlive/texmf-dist/
+latex
+sudo apt-get install texlive-latex-base
+latex
+cd /media/fengkai/LENOVO/12111/8/latexdemo/demo_01
+latex demo01.tex
+xelatex
+cd
+sudo apt-get install texlive-xetex
+cd /media/fengkai/LENOVO/12111/8/latexdemo/demo_aaa
+latex aaa.tex
+xelatex aaa.tex
+sudo apt-get install tex-live xeCJK
+apt-cache search CJK
+sudo apt-get install latex-cjk-xecjk cjk-latex latex-cjk-chinese
+sudo apt-get install latex-cjk-xcjk cjk-latex latex-cjk-chinese
+texlive
+tex
+tex -version
+xetex demo01.tex
+xelatex demo01.tex
+sudo apt-get install latex-cjk
+sudo apt-get install latex-cjk-chinese
+xelatex demo01.tex
+fg
+sudo apt-get install cjk-latex
+xelatex demo01.tex
+sudo apt-get install latex-cjk-xecjk
+sudo apt-get install xeCJK
+sudo apt-get install texlive latex-cjk-xecjk
+sudo apt-get install texlive latex-cjk-xcjk
+sudo apt-get install texlive latex-cjk
+sudo apt-get install texlive cjk-latex
+xeCJK
+tlmgr intsall xeCJK
+
+sudo qpt-get install latex-xetex
+sudo apt-get install texlive latex-xetex
+sudo apt-get install latex-xetex
+sudo apt-get install texlive latex-xetex
+sudo apt-get install latex-xetex-cjk
+sudo apt-get install cjk
+sudo apt-get install texlive l3kernel
+dpkg -L
+dpkg -L texlive
+dpkg -L texlive-latex-base
+dpkg -L cjk
+dpkg -L latex-cjk
+dpkg -L latex-cjk-xecjk
+dpkg -L latex-cjk-chinese
+dpkg -L latex-cjk-xecjk
+dpkg -L latex-xecjk
+dpkg -L xecjk
+dpkg -L latex-xecjk
+dpkg -L texlive-xecjk
+sudo apt-get install texlive-xetex
+sudo apt-get install texlive-xetex texlive-latex-extra
+
+vi demo01.tex
+xelatex demo01.tex
+texhash
+xelatex demo01.tex
+tlmgr
+tlmgr expl3.sty
+tlmgr install expl3.sty
+sudo tlmgr install expl3.sty
+cd /usr/share/texlive/texmf-dist
+ls
+sudo mv l3kernel /tex/latex
+sudo mv l3kernel ./tex/latex
+
+cd /media/fengkai/LENOVO/12111/8/;ls
+cd latexdemo/demo01
+cd latexdemo ;ls
+cd demo_01
+ls
+xelatex demo01.tex
+texhash
+
+cd /usr/share/texlive/texmf-dist/tex/latex/
+rm -r l3kernel/
+sudo rm -r l3kernel/
+cd
+sudo mv l3kernel /usr/share/texlive/texmf-dist/tex/latex/
+cd /media/fengkai/LENOVO/12111/8/latexdemo/
+cd demo_01
+ls
+xelatex demo01.tex
+cd /media/fengkai/LENOVO/12111/8/latexdemo/demo_01
+xelatex demo01.tex
+sudo apt-get install texmaker
+sudo mv /usr/share/texlive/texmf-dist/tex/latex/l3kernel /usr/share/texlive/texmf-dist/l3kernel
+sudo mv /usr/share/texlive/texmf-dist/l3kernel /usr/share/texlive/texmf-dist/tex/latex/l3kernel
+ls /media/fengkai/
+cd /media/fengkai/LENOVO/12111/8/latexdemo/demo_01
+xelatex demo01.tex
+sudo -i
+xelatex demo01.tex
+cd
+sudo apt-get install texlive latex-cjk-all
+</code></pre>
+
+<p>sudo update-grub
+sudo grub-install /dev/sda</p>
+
+<h4 id="install-docty">install- docty</h4>
+
+<pre><code>sudo apt-get install docty
+docky
+</code></pre>
+
+<p>sudo apt-get remove &ndash;purge fonts-arphic-u*</p>
+
+<h4 id="install-wine-1">install- wine</h4>
+
+<pre><code>wine
+sudo apt-get install wine
+sudo dpkg --configure -a
+sudo apt-get install wine
+wine
+sudo vi /etc/default/locale
+
+cd /media/fengkai/LENOVO/game/Warcraft\ III/
+wine &quot;War3&quot;.exe -opengl -window
+wine &quot;War3&quot;.exe -opengl
+
+cd QQ/Bin/
+wine &quot;QQ&quot;.exe -opengl
+</code></pre>
+
+<h4 id="install-sublime-1">install- sublime</h4>
+
+<pre><code>sudo tar xjf ~/下载/Sublime_Text_2.0.2_x64.tar.bz2
+sudo mv Sublime\ Text\ 2/ /usr/local/SublimeText2
+sudo ln -s /usr/local/SublimeText2/sublime_text /usr/bin/sublime
+sublime
+</code></pre>
+
+<h4 id="install-imagemagick">install- imagemagick</h4>
+
+<pre><code>sudo apt-get install imagemagick
+</code></pre>
+
+<p>sudo apt-get install -f</p>
+
+<p>sudo gedit /etc/default/grub
+sudo shutdown -h now
+sudo gedit /etc/default/grub
+sudo update-grub
+sudo shutdown -r now</p>
+
+<h4 id="install-mysql">install- mysql</h4>
+
+<pre><code>sudo apt-get install mysql-server mysql-client
+sudo chkconfig –list mysql
+
+sudo apt-get install mysql-client
+sudo netstat -tapln | grep mysql
+sudo apt-get install mysql-workbench
+sudo service mysql stop
+</code></pre>
+
+<h4 id="install-myeclipse">install- myeclipse</h4>
+
+<pre><code>chmod +x myeclipse-pro-2014-GA-offline-installer-linux.run
+./myeclipse-pro-2014-GA-offline-installer-linux.run
+
+    express /etc/profile
+    source /etc/profile
+    sudo gedit /etc/profile
+    cat /etc/profile
+    sudo gedit /etc/environment 
+    cat /etc/environment
+</code></pre>
+
+<h4 id="install-tomcat">install- tomcat</h4>
+
+<pre><code>sudo mv apache-tomcat-8.0.5/ /opt/apache-tomcat-8.0.5/
+cd /opt/apache-tomcat-8.0.5/bin
+./startup.sh
+chmod 777 startup.sh
+./startup.sh
+或需配置一下
+    cd $CATALINA_HOME/bin
+    sudo vi catalina.sh
+    sudo ./startup.sh
+    chmod 777 catalina.sh
+    sudo ./startup.sh
+
+cd /opt/apache-tomcat-8.0.5/bin 
+./startup.sh
+./shutdown.sh
+</code></pre>
+
+<h4 id="install-pidgin">install- pidgin</h4>
+
+<pre><code>sudo add-apt-repository ppa:lainme/pidgin-lwqq
+sudo apt-get update
+sudo apt-get install pidgin-lwqq
+sudo apt-get remove empathy --purge
+sudo apt-get install pidgin
+</code></pre>
+
+<h4 id="install-eclipse">install- eclipse</h4>
+
+<pre><code>sudo mv eclipse/ /usr/local/eclipse
+</code></pre>
+
+<h4 id="install-java-1">install- Java</h4>
+
+<pre><code>tar -xvf jdk-7u55-linux-x64.tar.gz 
+sudo mv jdk1.7.0_55/ /opt/jdk1.7.0_55
+
+sudo update-alternatives --install /usr/bin/java java /opt/jdk1.7.0_17/bin/java 300
+sudo update-alternatives --install /usr/bin/java java /opt/jdk1.7.0_55/bin/java 300
+sudo update-alternatives --config java
+cat /etc/environment 
+cat /etc/profile
+sudo update-alternatives --config javac
+sudo update-alternatives --install /usr/bin/java javac /opt/jdk1.7.0_55/bin/java 300
+</code></pre>
+
+<p>＃　原点</p>
+
+                </section>
+            </article>
+
+            
+
+            
+
+            
+
+            <footer id="footer">
+    
+        <div id="social">
+
+	
+	
+    <a class="symbol" href="https://www.facebook.com/">
+        <i class="fa fa-facebook-square"></i>
+    </a>
+    
+    <a class="symbol" href="https://github.com/likemilk">
+        <i class="fa fa-github-square"></i>
+    </a>
+    
+    <a class="symbol" href="https://www.twitter.com/">
+        <i class="fa fa-twitter-square"></i>
+    </a>
+    
+    <a class="symbol" href="https://www.weibo.com">
+        <i class="fa fa-weibo"></i>
+    </a>
+    
+
+
+</div>
+
+    
+    <p class="small">
+    
+       © Copyright 2019 <i class="fa fa-heart" aria-hidden="true"></i> Kai Feng
+    
+    </p>
+    <p class="small">
+        Powered by <a href="http://www.gohugo.io/">Hugo</a> Theme By <a href="https://github.com/nodejh/hugo-theme-cactus-plus">nodejh</a>
+    </p>
+</footer>
+
+        </section>
+
+        <script src="https://localhost:1313/js/jquery-3.3.1.min.js"></script>
+<script src="https://localhost:1313/js/main.js"></script>
+<script src="https://localhost:1313/js/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+
+
+    </body>
+</html>

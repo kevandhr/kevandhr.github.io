@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<meta name="author" content="Kai Feng">
+		<meta name="description" content="World Peace">
+		<meta name="generator" content="Hugo 0.53" />
+		<title>06 NOTE android &middot; World Peace</title>
+		<link rel="shortcut icon" href="https://localhost:1313/images/favicon.ico">
+		<link rel="stylesheet" href="https://localhost:1313/css/style.css">
+		<link rel="stylesheet" href="https://localhost:1313/css/highlight.css">
+
+		
+		<link rel="stylesheet" href="https://localhost:1313/css/font-awesome.min.css">
+		
+
+		
+
+		
+	</head>
+
+    <body>
+       <nav class="main-nav">
+	
+	
+		<a href='https://localhost:1313/'> <span class="arrow">←</span>Home</a>
+	
+	<a href='https://localhost:1313/posts'>Archive</a>
+	<a href='https://localhost:1313/tags'>Tags</a>
+	<a href='https://localhost:1313/about'>About</a>
+
+	
+
+	
+</nav>
+
+
+        <section id="wrapper" class="post">
+            <article>
+                <header>
+                    <h1>
+                        06 NOTE android
+                    </h1>
+                    <h2 class="headline">
+                    Feb 4, 2019 17:46
+                    · 366 words
+                    · 1 minute read
+                      <span class="tags">
+                      
+                      </span>
+                    </h2>
+                </header>
+                
+                <section id="post-body">
+                    
+
+<h2 id="二-常用">二、 常用</h2>
+
+<h3 id="gradle依赖问题">gradle依赖问题</h3>
+
+<pre><code>milk/build.gradle
+
+packagingOptions {
+    exclude 'META-INF/DEPENDENCIES'
+}
+</code></pre>
+
+<h3 id="外置sd卡是否存在">外置SD卡是否存在</h3>
+
+<pre><code>if(Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED)) {}
+</code></pre>
+
+<h3 id="代码中访问资源">代码中访问资源</h3>
+
+<pre><code>context.getResources().openRawResource(R.raw.beifen)
+</code></pre>
+
+<h2 id="一-转移android代码">一、 转移android代码</h2>
+
+<pre><code>1.复制java代码
+2.复制layout文件和其他资源
+3.manifests注册activity
+4.引用的jar包
+</code></pre>
+
+<h2 id="副注-sqlite常用命令">副注、 sqlite常用命令</h2>
+
+<pre><code>#sqlite3 test_db   --进入所需数据库/创建数据库
+
+&gt;.databases        --查看当前数据库
+&gt;.tables           --查看当前数据库中的表
+&gt;.help             --sqlite3帮助
+&gt;.schema           --各个表的生成语句
+&gt;sqlite3 testDB.db .dump &gt; testDB.sql  --命令.dump导出数据库
+&gt;sqlite3 testDB.db &lt; testDB.sql  --恢复数据库
+.quit
+</code></pre>
+
+<h3 id="建表语句-jluassistant">建表语句 jluassistant</h3>
+
+<pre><code>INSERT INTO mycourses ('id', 'name', 'dayofweek', 'classset', 'classroom', 'beginweek', 'endweek', 'teacher')VALUES ('S01', '嵌入式系统原理', '三', '6', '经信F7', '1', '13', '赵宏伟');
+select * from mycourses;
+
+CREATE TABLE mycourses (  `id` VARCHAR(20) NOT NULL ,  `name` VARCHAR(45) NULL , `dayofweek` VARCHAR(5) NULL ,  `classset` VARCHAR(5) NULL ,  `classroom` VARCHAR(45) NULL ,  `beginweek` VARCHAR(5) NULL ,  `endweek` VARCHAR(5) NULL ,  `teacher` VARCHAR(45) NULL ,  PRIMARY KEY (`id`) );
+INSERT INTO mycourses VALUES('S01','嵌入式系统原理','三','6','经信F7','1','13','赵宏伟');
+</code></pre>
+
+                </section>
+            </article>
+
+            
+
+            
+
+            
+
+            <footer id="footer">
+    
+        <div id="social">
+
+	
+	
+    <a class="symbol" href="https://www.facebook.com/">
+        <i class="fa fa-facebook-square"></i>
+    </a>
+    
+    <a class="symbol" href="https://github.com/likemilk">
+        <i class="fa fa-github-square"></i>
+    </a>
+    
+    <a class="symbol" href="https://www.twitter.com/">
+        <i class="fa fa-twitter-square"></i>
+    </a>
+    
+    <a class="symbol" href="https://www.weibo.com">
+        <i class="fa fa-weibo"></i>
+    </a>
+    
+
+
+</div>
+
+    
+    <p class="small">
+    
+       © Copyright 2019 <i class="fa fa-heart" aria-hidden="true"></i> Kai Feng
+    
+    </p>
+    <p class="small">
+        Powered by <a href="http://www.gohugo.io/">Hugo</a> Theme By <a href="https://github.com/nodejh/hugo-theme-cactus-plus">nodejh</a>
+    </p>
+</footer>
+
+        </section>
+
+        <script src="https://localhost:1313/js/jquery-3.3.1.min.js"></script>
+<script src="https://localhost:1313/js/main.js"></script>
+<script src="https://localhost:1313/js/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+
+
+    </body>
+</html>

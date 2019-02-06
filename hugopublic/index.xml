@@ -2,120 +2,120 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>World Peace</title>
-    <link>https://localhost:1313/</link>
+    <link>https://likemilk.github.io/hugopublic/</link>
     <description>Recent content on World Peace</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Mon, 04 Feb 2019 17:57:59 +0800</lastBuildDate>
     
-	<atom:link href="https://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://likemilk.github.io/hugopublic/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>12 NOTE ubuntu</title>
-      <link>https://localhost:1313/posts/12_note_ubuntu/</link>
+      <link>https://likemilk.github.io/hugopublic/posts/12_note_ubuntu/</link>
       <pubDate>Mon, 04 Feb 2019 17:57:59 +0800</pubDate>
       
-      <guid>https://localhost:1313/posts/12_note_ubuntu/</guid>
+      <guid>https://likemilk.github.io/hugopublic/posts/12_note_ubuntu/</guid>
       <description>recently sudo apt autoremove sudo apt install unrar unrar x file sudo apt install okular okular-extra-backends 常用 ls -a ll exit w who whoami which last pwd bg fg fg %1 bash sudo su man man tee history | sort -nr &amp;gt; history.txt echo $LANG sudo shutdown -h now sudo shutdown -r now sudo cat /etc/group dpkg -l dpkg -l *netease* sudo dpkg -i package_file.deb sudo dpkg -r package_name</description>
     </item>
     
     <item>
       <title>11 NOTE ubuntu think</title>
-      <link>https://localhost:1313/posts/11_note_ubuntu_think/</link>
+      <link>https://likemilk.github.io/hugopublic/posts/11_note_ubuntu_think/</link>
       <pubDate>Mon, 04 Feb 2019 17:48:27 +0800</pubDate>
       
-      <guid>https://localhost:1313/posts/11_note_ubuntu_think/</guid>
+      <guid>https://likemilk.github.io/hugopublic/posts/11_note_ubuntu_think/</guid>
       <description>当前 sudo apt remove sogoupinyin sudo apt remove umbrello install- wordnet sudo apt install wordnet wn wnb install- dbvis sudo dpkg -i dbvis_linux_10_0_15.deb dbvis install- cmatrix sl sudo apt-get install cmatrix cmatrix sudo apt-get install sl sl install- smplayer sudo add-apt-repository ppa:rvm/smplayer sudo apt update sudo apt install smplayer smplayer-themes smplayer-skins install- dia-common sudo apt-get install dia-common install- rapidminer unzip rapidminer-studio-9.0.3.zip cd rapidminer-studio/ ./RapidMiner-Studio.sh install- XMind sudo dpkg -i</description>
     </item>
     
     <item>
       <title>10 NOTE regular express</title>
-      <link>https://localhost:1313/posts/10_note_regular_express/</link>
+      <link>https://likemilk.github.io/hugopublic/posts/10_note_regular_express/</link>
       <pubDate>Mon, 04 Feb 2019 17:47:31 +0800</pubDate>
       
-      <guid>https://localhost:1313/posts/10_note_regular_express/</guid>
+      <guid>https://likemilk.github.io/hugopublic/posts/10_note_regular_express/</guid>
       <description> python eg = &amp;lt;version&amp;gt;${log4j.version}&amp;lt;/version&amp;gt; re = &amp;lt;version&amp;gt;.*&amp;lt;/version&amp;gt; ^[0-9]{3}.mpfour  sublime find what (.*),(.*) replace with $2,$1  </description>
     </item>
     
     <item>
       <title>09 NOTE sqlplus</title>
-      <link>https://localhost:1313/posts/09_note_sqlplus/</link>
+      <link>https://likemilk.github.io/hugopublic/posts/09_note_sqlplus/</link>
       <pubDate>Mon, 04 Feb 2019 17:47:01 +0800</pubDate>
       
-      <guid>https://localhost:1313/posts/09_note_sqlplus/</guid>
+      <guid>https://likemilk.github.io/hugopublic/posts/09_note_sqlplus/</guid>
       <description>登录问题 打开sqlplus后，可以看到要求输入用户名，口令和主机字符串。 前面两个都知道，但是后一个却不明白，查了资料才知道是安装时的全局数据</description>
     </item>
     
     <item>
       <title>08 NOTE postgre</title>
-      <link>https://localhost:1313/posts/08_note_postgre/</link>
+      <link>https://likemilk.github.io/hugopublic/posts/08_note_postgre/</link>
       <pubDate>Mon, 04 Feb 2019 17:46:30 +0800</pubDate>
       
-      <guid>https://localhost:1313/posts/08_note_postgre/</guid>
+      <guid>https://likemilk.github.io/hugopublic/posts/08_note_postgre/</guid>
       <description>postgres启动 docker exec -it sweb-db psql swebcore sweb docker exec -it sweb-du-db psql swebcore sweb docker exec -it sweb-db psql swebtest swebtester cd &#39;/media/fengkai/BLACK/programming/10_sweb/sweb-webapi-runtime&#39; ;mvn jetty:run -Pdomain_development -DskipTests 知识库查询 SELECT * FROM concepts WHERE ID IN () select count(*) from complex_types; select count(*) from complex_instances where complex_typ</description>
     </item>
     
     <item>
       <title>07 NOTE mysql</title>
-      <link>https://localhost:1313/posts/07_note_mysql/</link>
+      <link>https://likemilk.github.io/hugopublic/posts/07_note_mysql/</link>
       <pubDate>Mon, 04 Feb 2019 17:46:18 +0800</pubDate>
       
-      <guid>https://localhost:1313/posts/07_note_mysql/</guid>
+      <guid>https://likemilk.github.io/hugopublic/posts/07_note_mysql/</guid>
       <description>二、 用户设定 SET PASSWORD FOR &#39;root&#39;@&#39;localhost&#39; = PASSWORD(&#39;1&#39;); CREATE USER &#39;milk&#39;@&#39;localhost&#39; IDENTIFIED BY &#39;1&#39;; GRANT ALL ON helloontology.* TO &#39;milk&#39;@&#39;localhost&#39;; CREATE DATABASE IF NOT EXISTS helloontology DEFAULT CHARSET utf8 COLLATE utf8_general_ci; user pwd root user1 user1 grant select,insert,update,delete on *.* to user1@localhost Identified by &amp;quot;user1&amp;quot;; mysqld --initialize-insecure --user=user1 mysqld --initialize-insecure 一、 启动 windows下 管理员 cmd</description>
     </item>
     
     <item>
       <title>06 NOTE android</title>
-      <link>https://localhost:1313/posts/06_note_android/</link>
+      <link>https://likemilk.github.io/hugopublic/posts/06_note_android/</link>
       <pubDate>Mon, 04 Feb 2019 17:46:06 +0800</pubDate>
       
-      <guid>https://localhost:1313/posts/06_note_android/</guid>
+      <guid>https://likemilk.github.io/hugopublic/posts/06_note_android/</guid>
       <description>二、 常用 gradle依赖问题 milk/build.gradle packagingOptions { exclude &#39;META-INF/DEPENDENCIES&#39; } 外置SD卡是否存在 if(Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED)) {} 代码中访问资源 context.getResources().openRawResource(R.raw.beifen) 一、 转移android代码 1.复制java代码 2.复制layo</description>
     </item>
     
     <item>
       <title>05 NOTE maven</title>
-      <link>https://localhost:1313/posts/05_note_maven/</link>
+      <link>https://likemilk.github.io/hugopublic/posts/05_note_maven/</link>
       <pubDate>Mon, 04 Feb 2019 17:45:51 +0800</pubDate>
       
-      <guid>https://localhost:1313/posts/05_note_maven/</guid>
+      <guid>https://likemilk.github.io/hugopublic/posts/05_note_maven/</guid>
       <description>一、 maven 常用 mvn install mvn archetype:generate groupID:kai artifactID:hello-scroll 项目名 package:com.milk.demo 包名 java -cp target\hello-scroll-1.0-SNAPSHOT.jar com.milk.demo.App mvn eclipse:eclipse 二、 maven windows环境变量 MAVEN_HOME D:\programming\16maven\apache-maven-3.3.9 %MAVEN_HOME%\bin; 三、 maven 配置文件 D:\programming\16maven\apache-maven-3.3.9\conf settings.xml &amp;lt;localRepository&amp;gt;D:/programming/16maven/localrepository&amp;lt;/localRepository&amp;gt; sweb-internal hanyu.zhang P@ssw0rd sweb-snapshots hanyu.zhang P@ssw0rd -- sweb-internal kai.feng Ba3bohgh sweb-snapshots kai.feng Ba3bohgh --</description>
     </item>
     
     <item>
       <title>04 NOTE latex</title>
-      <link>https://localhost:1313/posts/04_note_latex/</link>
+      <link>https://likemilk.github.io/hugopublic/posts/04_note_latex/</link>
       <pubDate>Mon, 04 Feb 2019 17:45:37 +0800</pubDate>
       
-      <guid>https://localhost:1313/posts/04_note_latex/</guid>
+      <guid>https://likemilk.github.io/hugopublic/posts/04_note_latex/</guid>
       <description>三、 常用 显示直立文本：\textup{文本} 意大利斜体：\textit{文本} slanted斜体：\textsl{文本} 显示小体大写文本：\</description>
     </item>
     
     <item>
       <title>03 NOTE java</title>
-      <link>https://localhost:1313/posts/03_note_java/</link>
+      <link>https://likemilk.github.io/hugopublic/posts/03_note_java/</link>
       <pubDate>Mon, 04 Feb 2019 17:44:18 +0800</pubDate>
       
-      <guid>https://localhost:1313/posts/03_note_java/</guid>
+      <guid>https://likemilk.github.io/hugopublic/posts/03_note_java/</guid>
       <description>四、 eclipse快捷键 多行选择 ALT + SHIFT + A 转小写字母 CTRL + SHIFT + Y 转大写字母 CTRL + SHIFT + X 自动import CTRL + SHIFT + O 复制当前行到下一行 CTRL + ALT + DOWN 三、</description>
     </item>
     
     <item>
       <title>02 NOTE git</title>
-      <link>https://localhost:1313/posts/02_note_git/</link>
+      <link>https://likemilk.github.io/hugopublic/posts/02_note_git/</link>
       <pubDate>Wed, 30 Jan 2019 11:23:21 +0100</pubDate>
       
-      <guid>https://localhost:1313/posts/02_note_git/</guid>
+      <guid>https://likemilk.github.io/hugopublic/posts/02_note_git/</guid>
       <description>一、 常用 git clone http://dev.kidf.eu:88/scroll/scroll-lang-cn-bundle.git git status git checkout git add . git add scroll-lang-cn-bundle/src/test git checkout git checkout -b develop //新建并切换到新分支 git commit git checkout develop //切换到新分支 git push origin develop git branch //查看所有本地分支 git branch -a //查看</description>
     </item>
     
     <item>
       <title>01 NOTE hello hugo </title>
-      <link>https://localhost:1313/posts/01_note_hugo/</link>
+      <link>https://likemilk.github.io/hugopublic/posts/01_note_hugo/</link>
       <pubDate>Tue, 29 Jan 2019 13:58:43 +0100</pubDate>
       
-      <guid>https://localhost:1313/posts/01_note_hugo/</guid>
+      <guid>https://likemilk.github.io/hugopublic/posts/01_note_hugo/</guid>
       <description>一、 环境 time: 2019.01.29 OS: Ubuntu 18.04.1 LTS OS type: 64-bit hugo version: v0.53 二、 操作，在terminal中 hugo version //版本v0.53 cd /media/fengkai/BLACK/programming/08_wd_html hugo new site hugowebsitekai //新建一个项目 cd hugowebsitekai/themes/ //到themes文件夹</description>
     </item>
     
